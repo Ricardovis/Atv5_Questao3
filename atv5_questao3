@@ -1,0 +1,54 @@
+programa {
+	funcao inicio() {
+		
+	/*3. Faça um programa que pergunte ao paciente se está sentindo os sintomas da
+     COVID (de acordo com o folheto) e informe se está ou não com COVID.
+     Desafio: informe também a intensidade dos sintomas (comuns ou graves) */
+
+    escreva("Olá, bem vindo ao programa que informa se você está com COVID ou não, peço que responda as seguintes perguntas, para que eu possa te passar essa informação: \n")
+    
+    
+    cadeia corisa 
+    cadeia tosse
+    cadeia febre 
+    cadeia dor_de_garganta 
+    cadeia falta_de_ar 
+
+    
+    escreva("Você está com corisa?\nescreva (sim) ou (nao) ")
+    leia(corisa)
+    limpa()
+    
+    escreva("Você está com tosse?\nescreva (sim) ou (nao) ")
+    leia(tosse)
+    limpa()
+    
+    escreva("Você está com febre?\nescreva (sim) ou (nao) ")
+    leia(febre)
+    limpa()
+    
+    escreva("Você está com dor de garganta?\nescreva (sim) ou (nao) ")
+    leia(dor_de_garganta)
+    limpa()
+    
+    escreva("Agora o mais grave e decisivo de todos, você está sentindo falta de ar?\nescreva (sim) ou (nao) ")
+    leia(falta_de_ar)
+    limpa()
+    
+    se(corisa == "sim" ou tosse == "sim"  ou febre == "sim" ou dor_de_garganta == "sim" e falta_de_ar == "nao"){
+        
+        escreva("Você apresenta sintomas leves de COVID-19")
+        
+    }se(falta_de_ar == "sim"){
+        
+        escreva("\nVocê apresenta sintomas graves de COVID-19")
+        
+    
+    }senao se(corisa == "nao" e tosse == "nao"  e febre == "nao" e dor_de_garganta == "nao" e falta_de_ar == "nao"){
+        
+        escreva("Você não apresenta sintomas de COVID-19")
+        
+    }
+
+	}
+}
